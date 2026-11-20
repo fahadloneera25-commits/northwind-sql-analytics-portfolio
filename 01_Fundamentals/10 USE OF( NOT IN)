@@ -1,0 +1,10 @@
+SELECT 
+order_id,
+customer_id,
+ship_country As destination_country,
+freight AS shipping_cost
+FROM dbo.northwind_orders
+WHERE ship_country  NOT IN ('Germany','France','Brazil');
+
+
+
