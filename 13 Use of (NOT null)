@@ -1,0 +1,12 @@
+/*
+Business Question: Which orders have already been shipped (where shipped_date is present and not missing)? List their order ID, customer ID, order date, and shipped date.
+Query: Filters dbo.northwind_orders where shipped_date IS NOT NULL.
+*/
+
+
+SELECT order_id,
+customer_id,
+order_date,
+shipped_date
+From dbo.northwind_orders
+WHERE order_date is not NULL;
