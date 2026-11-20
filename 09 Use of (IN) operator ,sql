@@ -1,0 +1,13 @@
+/*
+Business Question: Which orders were shipped to Germany, France, or Brazil? List their order ID, customer ID, destination country, and shipping cost.
+Query: Filters dbo.northwind_orders where ship_country is IN the list ('Germany', 'France', 'Brazil').
+*/
+
+SELECT 
+order_id,
+customer_id,
+ship_country As destination_country,
+freight AS shipping_cost
+FROM dbo.northwind_orders
+WHERE ship_country IN ('Germany','France','Brazil');
+
