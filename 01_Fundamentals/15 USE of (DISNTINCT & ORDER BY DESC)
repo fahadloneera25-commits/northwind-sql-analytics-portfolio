@@ -1,0 +1,10 @@
+/*
+Business Question: Which orders had the highest shipping cost? List order ID, customer ID, destination country, and shipping cost sorted from highest to lowest freight.
+Query: Selects order details from dbo.northwind_orders ordered by freight descending.
+*/
+
+ECT DISTINCT
+Ship_country AS destination_country
+FROM dbo.northwind_orders
+ORDER BY destination_country DESC;
+
